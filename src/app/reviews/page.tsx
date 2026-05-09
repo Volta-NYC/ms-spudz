@@ -27,7 +27,7 @@ export default function ReviewsPage() {
           <a
             href={site.googleReviewUrl}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="inline-flex justify-center rounded-full bg-spudz-red px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:bg-[#ff633f]"
           >
             Leave A Google Review

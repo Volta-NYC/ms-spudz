@@ -22,10 +22,10 @@ export default function Footer() {
             </a>
           </address>
           <div className="mt-4 flex gap-3">
-            <a className="text-sm font-bold text-white hover:text-spudz-gold" href="https://www.instagram.com/Msspudz_epng" target="_blank" rel="noreferrer">
+            <a className="text-sm font-bold text-white hover:text-spudz-gold" href="https://www.instagram.com/Msspudz_epng" target="_blank" rel="noopener noreferrer">
               Instagram
             </a>
-            <a className="text-sm font-bold text-white hover:text-spudz-gold" href="https://www.facebook.com/MsSpudz" target="_blank" rel="noreferrer">
+            <a className="text-sm font-bold text-white hover:text-spudz-gold" href="https://www.facebook.com/MsSpudz" target="_blank" rel="noopener noreferrer">
               Facebook
             </a>
           </div>

@@ -91,11 +91,11 @@ export default function ContactPage() {
               <p>{site.address}</p>
               <p>{site.location}</p>
               <p>
-                <a href={site.instagram} target="_blank" rel="noreferrer" className="font-bold text-white hover:text-spudz-gold">
+                <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="font-bold text-white hover:text-spudz-gold">
                   Instagram
                 </a>
                 {" / "}
-                <a href={site.facebook} target="_blank" rel="noreferrer" className="font-bold text-white hover:text-spudz-gold">
+                <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="font-bold text-white hover:text-spudz-gold">
                   Facebook
                 </a>
               </p>

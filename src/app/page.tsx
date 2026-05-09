@@ -5,7 +5,7 @@ import SectionHeading from "@/lib/components/section-heading"
 import { founders, signatureItems, site } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Ms. Spudz | Everything Potato 'No' Gravy",
   description:
     "Ms. Spudz - Everything Potato 'No' Gravy is a Brooklyn fast food outlet serving fresh-cut fries, loaded spudz, seafood bites, and gourmet dipping sauces.",
 }
@@ -97,8 +97,8 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-2 text-sm font-black sm:flex-row sm:items-center sm:gap-6">
             <a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a>
-            <a href={site.instagram} target="_blank" rel="noreferrer" className="hover:text-white">Instagram</a>
-            <a href={site.facebook} target="_blank" rel="noreferrer" className="hover:text-white">Facebook</a>
+            <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-white">Instagram</a>
+            <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-white">Facebook</a>
           </div>
         </div>
       </section>

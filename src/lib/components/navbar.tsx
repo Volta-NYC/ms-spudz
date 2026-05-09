@@ -12,6 +12,19 @@ const navItems = [
   { href: "/blog", label: "Blog" },
 ]
 
+const mobileMenuId = "mobile-navigation"
+
+function normalizePath(path: string) {
+  return path.replace(/\/+$/, "") || "/"
+}
+
+function isActivePath(pathname: string, href: string) {
+  const current = normalizePath(pathname)
+  const target = normalizePath(href)
+
+  return current === target || (target !== "/" && current.startsWith(`${target}/`))
+}
+
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
@@ -29,11 +42,12 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-7 lg:flex">
           {navItems.map((item) => {
-            const active = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href))
+            const active = isActivePath(pathname, item.href)
             return (
               <Link
                 key={item.href}
                 href={item.href}
+                aria-current={active ? "page" : undefined}
                 className={`text-sm font-bold uppercase tracking-[0.14em] transition ${
                   active ? "text-spudz-gold" : "text-white/72 hover:text-white"
                 }`}
@@ -55,6 +69,7 @@ export default function Navbar() {
           className="grid h-11 w-11 place-items-center rounded-full border border-white/15 text-white lg:hidden"
           aria-label="Toggle navigation menu"
           aria-expanded={open}
+          aria-controls={mobileMenuId}
           onClick={() => setOpen((value) => !value)}
         >
           <span className="relative h-4 w-5">
@@ -65,18 +80,25 @@ export default function Navbar() {
         </button>
       </nav>
 
-      <div className={`border-t border-white/10 bg-spudz-black px-4 py-5 lg:hidden ${open ? "block" : "hidden"}`}>
+      <div id={mobileMenuId} className={`border-t border-white/10 bg-spudz-black px-4 py-5 lg:hidden ${open ? "block" : "hidden"}`}>
         <div className="mx-auto flex max-w-7xl flex-col gap-2">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className="rounded-lg px-2 py-3 text-sm font-black uppercase tracking-[0.16em] text-white/80 hover:bg-white/5 hover:text-white"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const active = isActivePath(pathname, item.href)
+
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={active ? "page" : undefined}
+                onClick={() => setOpen(false)}
+                className={`rounded-lg px-2 py-3 text-sm font-black uppercase tracking-[0.16em] hover:bg-white/5 hover:text-white ${
+                  active ? "text-spudz-gold" : "text-white/80"
+                }`}
+              >
+                {item.label}
+              </Link>
+            )
+          })}
           <Link
             href="/menu"
             onClick={() => setOpen(false)}

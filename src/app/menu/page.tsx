@@ -90,7 +90,7 @@ export default function MenuPage() {
               </div>
 
               <div className={useFullDescription ? "grid gap-6 xl:grid-cols-2" : "grid gap-5 md:grid-cols-2 xl:grid-cols-3"}>
-                {section.itemIds.map((id) => {
+                {section.itemIds.map((id, itemIndex) => {
                   const baseItem = foodById[id]
                   const overrideImage = menuImageOverrides[`${id}:${section.id}`]
                   const item = overrideImage ? { ...baseItem, image: overrideImage } : baseItem
@@ -100,7 +100,7 @@ export default function MenuPage() {
                       item={item}
                       featured={useFullDescription}
                       description={useFullDescription ? item.fullDescription ?? item.description : item.description}
-                      animationDelay={`${Math.min(sectionIndex * 80 + 60, 360)}ms`}
+                      animationDelay={`${Math.min(sectionIndex * 80 + itemIndex * 45 + 60, 360)}ms`}
                     />
                   )
                 })}
