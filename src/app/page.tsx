@@ -17,26 +17,26 @@ export default function HomePage() {
         <img
           src={site.heroImage}
           alt="Ms. Spudz hero food spread"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="motion-hero-image absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,8,7,0.94)_0%,rgba(8,8,7,0.72)_42%,rgba(8,8,7,0.2)_100%)]" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-spudz-black to-transparent" />
 
         <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
           <div className="max-w-4xl">
-            <p className="mb-5 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">{site.homeTagline}</p>
-            <h1 className="font-display text-[clamp(4.5rem,15vw,12.5rem)] font-black uppercase leading-[0.78] tracking-normal text-white">
+            <p className="motion-fade-up mb-5 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">{site.homeTagline}</p>
+            <h1 className="motion-fade-up motion-fade-up-delay font-display text-[clamp(4.5rem,15vw,12.5rem)] font-black uppercase leading-[0.78] tracking-normal text-white">
               Ms.
               <br />
               Spudz
             </h1>
-            <p className="mt-7 max-w-2xl text-2xl font-black uppercase leading-tight text-spudz-cream sm:text-4xl">
+            <p className="motion-fade-up motion-fade-up-late mt-7 max-w-2xl text-2xl font-black uppercase leading-tight text-spudz-cream sm:text-4xl">
               {site.tagline}
             </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <div className="motion-fade-up motion-fade-up-late mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/menu"
-                className="inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-[#ff633f]"
+                className="motion-cta-glow inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-[#ff633f]"
               >
                 View Menu
               </Link>
@@ -49,7 +49,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="self-end border-l-4 border-spudz-gold bg-spudz-black/72 p-6 backdrop-blur-md">
+          <div className="motion-fade-up motion-fade-up-late self-end border-l-4 border-spudz-gold bg-spudz-black/72 p-6 backdrop-blur-md">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-spudz-gold">{founders.names}</p>
             <p className="mt-4 text-xl font-black uppercase leading-tight text-white">Mother daughter duo. Brooklyn roots. Big potato energy.</p>
             <p className="mt-4 text-base leading-7 text-spudz-muted">

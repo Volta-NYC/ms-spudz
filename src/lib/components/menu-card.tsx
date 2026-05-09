@@ -4,12 +4,14 @@ type MenuCardProps = {
   item: FoodItem
   description?: string
   featured?: boolean
+  animationDelay?: string
 }
 
-export default function MenuCard({ item, description, featured = false }: MenuCardProps) {
+export default function MenuCard({ item, description, featured = false, animationDelay }: MenuCardProps) {
   return (
     <article
-      className={`group overflow-hidden border border-white/10 bg-white/[0.035] ${
+      style={animationDelay ? { animationDelay } : undefined}
+      className={`group motion-fade-up overflow-hidden border border-white/10 bg-white/[0.035] transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/45 ${
         featured ? "grid lg:grid-cols-[0.95fr_1.05fr]" : ""
       }`}
     >

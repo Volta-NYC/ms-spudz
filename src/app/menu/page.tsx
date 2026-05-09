@@ -24,21 +24,21 @@ export default function MenuPage() {
   return (
     <>
       <section className="relative overflow-hidden bg-spudz-black px-4 pb-14 pt-32 sm:px-6 lg:px-8">
-        <div className="absolute inset-y-0 right-0 hidden w-1/2 lg:block">
-          <img src="/assets/images/signature-fries-product.jpg" alt="" className="h-full w-full object-cover opacity-35" />
+        <div className="absolute inset-y-0 right-0 hidden w-[52%] overflow-hidden lg:block">
+          <img src="/assets/images/signature-fries-product.jpg" alt="" className="motion-hero-image h-full w-full object-cover opacity-35" />
           <div className="absolute inset-0 bg-gradient-to-r from-spudz-black via-spudz-black/70 to-transparent" />
         </div>
         <div className="relative mx-auto max-w-7xl">
           <div className="max-w-4xl">
-            <p className="mb-4 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">Ms. Spudz Menu</p>
-            <h1 className="font-display text-[clamp(2.95rem,12vw,5rem)] font-black uppercase leading-[0.9] tracking-normal text-white sm:text-8xl lg:text-9xl">
+            <p className="motion-fade-up mb-4 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">Ms. Spudz Menu</p>
+            <h1 className="motion-fade-up motion-fade-up-delay font-display text-[clamp(2.95rem,12vw,5rem)] font-black uppercase leading-[0.9] tracking-normal text-white sm:text-8xl lg:text-9xl">
               Everything Potato.
             </h1>
-            <p className="mt-7 max-w-2xl text-xl leading-8 text-spudz-muted">
+            <p className="motion-fade-up motion-fade-up-late mt-7 max-w-2xl text-xl leading-8 text-spudz-muted">
               Menu page prices are treated as canonical. Signature Fries list Small, Medium, and Large pricing from the scraped menu and product detail text.
             </p>
           </div>
-          <div className="mt-10 flex flex-wrap gap-3">
+          <div className="motion-fade-up motion-fade-up-late mt-10 flex flex-wrap gap-3">
             <span className="rounded-full border border-spudz-gold/50 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-spudz-gold">
               14 food items
             </span>
@@ -58,14 +58,14 @@ export default function MenuPage() {
             <a
               key={section.id}
               href={`#${section.id}`}
-              className="whitespace-nowrap rounded-full border border-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-white/78 transition hover:border-spudz-gold hover:text-spudz-gold"
+              className="whitespace-nowrap rounded-full border border-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-white/78 transition duration-300 hover:-translate-y-0.5 hover:border-spudz-gold hover:text-spudz-gold focus-visible:border-spudz-gold focus-visible:text-spudz-gold focus-visible:outline-none"
             >
               {section.title}
             </a>
           ))}
           <a
             href="#sauces"
-            className="whitespace-nowrap rounded-full border border-spudz-gold/40 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-spudz-gold transition hover:bg-spudz-gold hover:text-spudz-black"
+            className="whitespace-nowrap rounded-full border border-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-white/78 transition duration-300 hover:-translate-y-0.5 hover:border-spudz-gold hover:text-spudz-gold focus-visible:border-spudz-gold focus-visible:text-spudz-gold focus-visible:outline-none"
           >
             Dipping Sauces
           </a>
@@ -100,6 +100,7 @@ export default function MenuPage() {
                       item={item}
                       featured={useFullDescription}
                       description={useFullDescription ? item.fullDescription ?? item.description : item.description}
+                      animationDelay={`${Math.min(sectionIndex * 80 + 60, 360)}ms`}
                     />
                   )
                 })}
@@ -118,8 +119,12 @@ export default function MenuPage() {
               copy="No sauce prices were listed in the scrape, so these are displayed as a sauce menu with descriptions only."
             />
             <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {sauces.map((sauce) => (
-                <article key={sauce.name} className="grid grid-cols-[96px_1fr] gap-5 border border-spudz-gold/20 bg-spudz-gold/[0.06] p-4">
+              {sauces.map((sauce, index) => (
+                <article
+                  key={sauce.name}
+                  style={{ animationDelay: `${Math.min(index * 45, 300)}ms` }}
+                  className="motion-fade-up grid grid-cols-[96px_1fr] gap-5 border border-white/10 bg-spudz-gold/[0.06] p-4 transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/55 hover:bg-spudz-gold/[0.1]"
+                >
                   <img src={sauce.image} alt={`${sauce.name} dipping sauce`} className="h-24 w-24 object-cover" loading="lazy" />
                   <div>
                     <h3 className="text-lg font-black uppercase leading-tight text-white">{sauce.name}</h3>
