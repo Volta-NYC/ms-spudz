@@ -2,20 +2,48 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="border-t mt-16">
-      <div className="max-w-6xl mx-auto px-6 py-8 text-sm text-gray-500 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-col gap-1">
-          <div>© {new Date().getFullYear()} Business Name</div>
-          <Link
-            href="https://nyc.voltanpo.org"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-600 hover:underline"
-          >
-            Website made by @VoltaNYC
-          </Link>
+    <footer className="border-t border-white/10 bg-spudz-black">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
+        <div>
+          <div className="text-2xl font-black uppercase tracking-normal text-white">Ms. Spudz</div>
+          <p className="mt-3 max-w-md text-sm leading-6 text-spudz-muted">
+            Everything Potato 'No' Gravy. Brooklyn-based, community-focused, and built around fresh-cut potatoes.
+          </p>
+          <p className="mt-6 text-sm text-spudz-muted">© {new Date().getFullYear()} Ms. Spudz</p>
         </div>
-        <div>Built with Volta</div>
+
+        <div>
+          <h2 className="text-xs font-black uppercase tracking-[0.18em] text-spudz-gold">Find Us</h2>
+          <address className="mt-4 not-italic text-sm leading-6 text-spudz-muted">
+            790 Eldert Lane<br />
+            Brooklyn, NY 11208<br />
+            <a className="text-white hover:text-spudz-gold" href="mailto:msspudzepng@gmail.com">
+              msspudzepng@gmail.com
+            </a>
+          </address>
+          <div className="mt-4 flex gap-3">
+            <a className="text-sm font-bold text-white hover:text-spudz-gold" href="https://www.instagram.com/Msspudz_epng" target="_blank" rel="noreferrer">
+              Instagram
+            </a>
+            <a className="text-sm font-bold text-white hover:text-spudz-gold" href="https://www.facebook.com/MsSpudz" target="_blank" rel="noreferrer">
+              Facebook
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-xs font-black uppercase tracking-[0.18em] text-spudz-gold">Links</h2>
+          <div className="mt-4 grid grid-cols-2 gap-3 text-sm font-bold text-white/78">
+            <Link className="hover:text-spudz-gold" href="/menu">Menu</Link>
+            <Link className="hover:text-spudz-gold" href="/about">About</Link>
+            <Link className="hover:text-spudz-gold" href="/contact">Contact</Link>
+            <Link className="hover:text-spudz-gold" href="/blog">Blog</Link>
+            <Link className="hover:text-spudz-gold" href="/reviews">Reviews</Link>
+            <a className="hover:text-spudz-gold" href="#">Terms</a>
+            <a className="hover:text-spudz-gold" href="#">Privacy</a>
+            <a className="hover:text-spudz-gold" href="#">Refund Policy</a>
+          </div>
+        </div>
       </div>
     </footer>
   )
