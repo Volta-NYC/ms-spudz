@@ -17,7 +17,7 @@ export const site = {
   facebook: "https://www.facebook.com/MsSpudz",
   googleReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJD1svfi5dwokRdu_9rW9cg9E",
   heroImage: "/assets/images/hero.jpg",
-  logoImage: "/assets/images/logo.png",
+  logoImage: "/assets/images/icon.png",
 }
 
 export const cateringNotice = [

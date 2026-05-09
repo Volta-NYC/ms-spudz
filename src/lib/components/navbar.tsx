@@ -20,9 +20,7 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-spudz-black/88 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Main navigation">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="grid h-10 w-10 place-items-center rounded-full border border-spudz-gold/50 bg-spudz-gold text-sm font-black text-spudz-black">
-            MS
-          </span>
+          <img src="/assets/images/icon.png" alt="Ms. Spudz icon" className="h-12 w-12 shrink-0 object-contain" />
           <span className="leading-none">
             <span className="block text-lg font-black uppercase tracking-normal text-white">Ms. Spudz</span>
             <span className="block text-[11px] font-bold uppercase tracking-[0.18em] text-spudz-gold">No Gravy</span>

@@ -20,11 +20,10 @@ export const metadata: Metadata = {
     "Ms. Spudz - Everything Potato 'No' Gravy is a Brooklyn fast food outlet serving fresh-cut fries, loaded spudz, seafood bites, and gourmet dipping sauces.",
   icons: {
     icon: [
-      { url: "/assets/images/favicon-32.webp", sizes: "32x32", type: "image/webp" },
-      { url: "/assets/images/favicon-96.webp", sizes: "96x96", type: "image/webp" },
-      { url: "/assets/images/favicon-256.webp", sizes: "256x256", type: "image/webp" },
+      { url: "/assets/images/icon.png", sizes: "200x200", type: "image/png" },
     ],
-    apple: "/assets/images/apple-touch-icon.png",
+    shortcut: "/assets/images/icon.png",
+    apple: "/assets/images/icon.png",
   },
   openGraph: {
     title: "Ms. Spudz | Everything Potato 'No' Gravy",
