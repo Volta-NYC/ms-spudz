@@ -1,4 +1,5 @@
 import type { FoodItem } from "@/lib/data"
+import type { CSSProperties } from "react"
 
 type MenuCardProps = {
   item: FoodItem
@@ -10,8 +11,9 @@ type MenuCardProps = {
 export default function MenuCard({ item, description, featured = false, animationDelay }: MenuCardProps) {
   return (
     <article
-      style={animationDelay ? { animationDelay } : undefined}
-      className={`group motion-fade-up overflow-hidden border border-white/10 bg-white/[0.035] transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/45 ${
+      data-scroll-reveal
+      style={animationDelay ? ({ "--scroll-delay": animationDelay } as CSSProperties) : undefined}
+      className={`group overflow-hidden border border-white/10 bg-white/[0.035] transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/45 ${
         featured ? "grid lg:grid-cols-[0.95fr_1.05fr]" : ""
       }`}
     >

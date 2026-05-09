@@ -10,7 +10,7 @@ export default function SectionHeading({ kicker, title, copy, align = "left", as
   const HeadingTag = as
 
   return (
-    <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
+    <div data-scroll-reveal className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
       {kicker ? (
         <p className="mb-4 text-xs font-black uppercase tracking-[0.24em] text-spudz-gold">{kicker}</p>
       ) : null}

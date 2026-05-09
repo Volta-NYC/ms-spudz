@@ -50,13 +50,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </h1>
       </div>
 
-      <div className="mx-auto mt-10 max-w-5xl overflow-hidden border border-white/10">
+      <div data-scroll-reveal className="mx-auto mt-10 max-w-5xl overflow-hidden border border-white/10">
         <img src={post.image} alt={`${post.title} image`} className="max-h-[620px] w-full object-cover" />
       </div>
 
       <div className="mx-auto mt-12 max-w-3xl space-y-10 text-lg leading-8 text-spudz-muted">
         {post.blocks.map((block, index) => (
-          <section key={block.heading ?? index} className="space-y-5">
+          <section key={block.heading ?? index} data-scroll-reveal className="space-y-5">
             {block.heading ? (
               <h2 className="font-display text-3xl font-black uppercase leading-tight text-white sm:text-4xl">
                 {block.heading}

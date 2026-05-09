@@ -49,7 +49,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="motion-fade-up motion-fade-up-late self-end border-l-4 border-spudz-gold bg-spudz-black/72 p-6 backdrop-blur-md">
+          <div data-scroll-reveal="right" className="motion-fade-up motion-fade-up-late self-end border-l-4 border-spudz-gold bg-spudz-black/72 p-6 backdrop-blur-md">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-spudz-gold">{founders.names}</p>
             <p className="mt-4 text-xl font-black uppercase leading-tight text-white">Mother daughter duo. Brooklyn roots. Big potato energy.</p>
             <p className="mt-4 text-base leading-7 text-spudz-muted">
@@ -90,7 +90,7 @@ export default function HomePage() {
       </section>
 
       <section className="border-y border-spudz-gold/25 bg-spudz-gold px-4 py-8 text-spudz-black sm:px-6 lg:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
+        <div data-scroll-reveal className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-2xl font-black uppercase tracking-normal">Find Us</h2>
             <p className="mt-1 text-sm font-bold">{site.address}</p>

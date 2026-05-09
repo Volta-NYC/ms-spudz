@@ -25,7 +25,7 @@ export default function AboutPage() {
               Brooklyn Born. Potato Built.
             </h1>
           </div>
-          <div className="border-l-4 border-spudz-gold bg-white/[0.035] p-6 sm:p-8">
+          <div data-scroll-reveal="right" className="border-l-4 border-spudz-gold bg-white/[0.035] p-6 sm:p-8">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-spudz-gold">{founders.names}</p>
             <h2 className="mt-3 text-3xl font-black uppercase leading-tight text-white">{founders.title}</h2>
             <p className="mt-5 text-lg leading-8 text-spudz-muted">{founders.visibleStory}</p>
@@ -42,7 +42,7 @@ export default function AboutPage() {
           />
           <div className="grid gap-5">
             {founders.timeline.map((event) => (
-              <article key={event.year} className="grid gap-4 border border-white/10 bg-spudz-black p-6 sm:grid-cols-[150px_1fr]">
+              <article key={event.year} data-scroll-reveal className="grid gap-4 border border-white/10 bg-spudz-black p-6 sm:grid-cols-[150px_1fr]">
                 <div className="font-display text-3xl font-black uppercase text-spudz-gold">{event.year}</div>
                 <p className="text-xl font-bold leading-8 text-white">{event.text}</p>
               </article>
@@ -60,17 +60,17 @@ export default function AboutPage() {
               copy="Ms. Spudz covers Brooklyn, NY and carries a local street food story into fresh-cut fries, loaded potatoes, seafood bites, and gourmet sauces."
             />
             <dl className="mt-10 grid gap-4 sm:grid-cols-2">
-              <div className="border border-white/10 p-5">
+              <div data-scroll-reveal className="border border-white/10 p-5">
                 <dt className="text-xs font-black uppercase tracking-[0.18em] text-spudz-gold">Business Type</dt>
                 <dd className="mt-2 text-lg font-bold text-white">{site.type}</dd>
               </div>
-              <div className="border border-white/10 p-5">
+              <div data-scroll-reveal className="border border-white/10 p-5">
                 <dt className="text-xs font-black uppercase tracking-[0.18em] text-spudz-gold">Location</dt>
                 <dd className="mt-2 text-lg font-bold text-white">{site.location}</dd>
               </div>
             </dl>
           </div>
-          <div className="relative overflow-hidden border border-spudz-gold/25 bg-spudz-gold/10 p-5">
+          <div data-scroll-reveal="right" className="relative overflow-hidden border border-spudz-gold/25 bg-spudz-gold/10 p-5">
             <img src={site.logoImage} alt="Ms. Spudz logo" className="aspect-square w-full object-cover" />
           </div>
         </div>

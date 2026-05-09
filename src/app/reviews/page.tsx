@@ -28,6 +28,7 @@ export default function ReviewsPage() {
             href={site.googleReviewUrl}
             target="_blank"
             rel="noopener noreferrer"
+            data-scroll-reveal
             className="inline-flex justify-center rounded-full bg-spudz-red px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:bg-[#ff633f]"
           >
             Leave A Google Review
@@ -42,7 +43,7 @@ export default function ReviewsPage() {
           </div>
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {reviews.map((review) => (
-              <article key={`${review.reviewer}-${review.date}`} className="flex min-h-[260px] flex-col justify-between border border-white/10 bg-spudz-black p-6">
+              <article key={`${review.reviewer}-${review.date}`} data-scroll-reveal className="flex min-h-[260px] flex-col justify-between border border-white/10 bg-spudz-black p-6">
                 <p className="text-lg leading-8 text-spudz-muted">"{review.text}"</p>
                 <div className="mt-8 border-t border-white/10 pt-5">
                   <h2 className="text-xl font-black uppercase text-white">{review.reviewer}</h2>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import type { CSSProperties } from "react"
 import MenuCard from "@/lib/components/menu-card"
 import SectionHeading from "@/lib/components/section-heading"
 import { foodById, menuSections, sauces, site } from "@/lib/data"
@@ -122,8 +123,9 @@ export default function MenuPage() {
               {sauces.map((sauce, index) => (
                 <article
                   key={sauce.name}
-                  style={{ animationDelay: `${Math.min(index * 45, 300)}ms` }}
-                  className="motion-fade-up grid grid-cols-[96px_1fr] gap-5 border border-white/10 bg-spudz-gold/[0.06] p-4 transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/55 hover:bg-spudz-gold/[0.1]"
+                  data-scroll-reveal
+                  style={{ "--scroll-delay": `${Math.min(index * 45, 300)}ms` } as CSSProperties}
+                  className="grid grid-cols-[96px_1fr] gap-5 border border-white/10 bg-spudz-gold/[0.06] p-4 transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/55 hover:bg-spudz-gold/[0.1]"
                 >
                   <img src={sauce.image} alt={`${sauce.name} dipping sauce`} className="h-24 w-24 object-cover" loading="lazy" />
                   <div>

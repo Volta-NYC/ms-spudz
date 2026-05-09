@@ -1,5 +1,6 @@
 import Link from "next/link"
 import type { Metadata } from "next"
+import type { CSSProperties } from "react"
 import SectionHeading from "@/lib/components/section-heading"
 import { blogPosts } from "@/lib/data"
 
@@ -25,8 +26,14 @@ export default function BlogPage() {
 
       <section className="bg-spudz-charcoal px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">
-          {blogPosts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="group block overflow-hidden border border-white/10 bg-spudz-black">
+          {blogPosts.map((post, index) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              data-scroll-reveal
+              style={{ "--scroll-delay": `${index * 80}ms` } as CSSProperties}
+              className="group block overflow-hidden border border-white/10 bg-spudz-black"
+            >
               <img src={post.image} alt={`${post.title} image`} className="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
               <div className="p-6 sm:p-8">
                 <p className="text-xs font-black uppercase tracking-[0.18em] text-spudz-gold">{post.date}</p>
