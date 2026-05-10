@@ -25,7 +25,7 @@ export default function HomePage() {
         <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
           <div className="max-w-4xl">
             <p className="motion-fade-up mb-5 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">{site.homeTagline}</p>
-            <h1 className="motion-fade-up motion-fade-up-delay font-display text-[clamp(4.5rem,15vw,12.5rem)] font-black uppercase leading-[0.78] tracking-normal text-spudz-black">
+            <h1 className="motion-fade-up motion-fade-up-delay font-display text-[clamp(3.9rem,12vw,10rem)] font-black uppercase leading-[0.78] tracking-normal text-spudz-black">
               Ms.
               <br />
               Spudz
