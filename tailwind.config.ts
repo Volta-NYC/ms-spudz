@@ -6,13 +6,13 @@ const config: Config = {
     extend: {
       colors: {
         spudz: {
-          black: "#080807",
-          charcoal: "#11110f",
-          ink: "#181714",
-          gold: "#d4a017",
-          red: "#ff4d2d",
-          cream: "#fff8e7",
-          muted: "#cfc7b8",
+          black: "#162411",
+          charcoal: "#f5ffef",
+          ink: "#25331f",
+          gold: "#c1e5a1",
+          red: "#c1e5a1",
+          cream: "#ffffff",
+          muted: "#53664d",
         },
       },
       fontFamily: {
@@ -20,7 +20,7 @@ const config: Config = {
         sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        glow: "0 24px 80px rgba(212, 160, 23, 0.16)",
+        glow: "0 24px 80px rgba(193, 229, 161, 0.34)",
       },
     },
   },

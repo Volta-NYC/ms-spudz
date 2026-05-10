@@ -30,12 +30,12 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-spudz-black/88 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-spudz-black/10 bg-white/88 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Main navigation">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img src="/assets/images/icon.png" alt="Ms. Spudz icon" className="h-12 w-12 shrink-0 object-contain" />
           <span className="leading-none">
-            <span className="block text-lg font-black uppercase tracking-normal text-white">Ms. Spudz</span>
+            <span className="block text-lg font-black uppercase tracking-normal text-spudz-black">Ms. Spudz</span>
             <span className="block text-[11px] font-bold uppercase tracking-[0.18em] text-spudz-gold">No Gravy</span>
           </span>
         </Link>
@@ -49,7 +49,7 @@ export default function Navbar() {
                 href={item.href}
                 aria-current={active ? "page" : undefined}
                 className={`text-sm font-bold uppercase tracking-[0.14em] transition ${
-                  active ? "text-spudz-gold" : "text-white/72 hover:text-white"
+                  active ? "text-spudz-gold" : "text-spudz-ink/72 hover:text-spudz-black"
                 }`}
               >
                 {item.label}
@@ -58,7 +58,7 @@ export default function Navbar() {
           })}
           <Link
             href="/menu"
-            className="rounded-full bg-spudz-red px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-[#ff633f]"
+            className="rounded-full bg-spudz-red px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-[#c1e5a1]"
           >
             Order Now
           </Link>
@@ -66,7 +66,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="grid h-11 w-11 place-items-center rounded-full border border-white/15 text-white lg:hidden"
+          className="grid h-11 w-11 place-items-center rounded-full border border-spudz-black/15 text-spudz-black lg:hidden"
           aria-label="Toggle navigation menu"
           aria-expanded={open}
           aria-controls={mobileMenuId}
@@ -80,7 +80,7 @@ export default function Navbar() {
         </button>
       </nav>
 
-      <div id={mobileMenuId} className={`border-t border-white/10 bg-spudz-black px-4 py-5 lg:hidden ${open ? "block" : "hidden"}`}>
+      <div id={mobileMenuId} className={`border-t border-spudz-black/10 bg-white px-4 py-5 lg:hidden ${open ? "block" : "hidden"}`}>
         <div className="mx-auto flex max-w-7xl flex-col gap-2">
           {navItems.map((item) => {
             const active = isActivePath(pathname, item.href)
@@ -91,8 +91,8 @@ export default function Navbar() {
                 href={item.href}
                 aria-current={active ? "page" : undefined}
                 onClick={() => setOpen(false)}
-                className={`rounded-lg px-2 py-3 text-sm font-black uppercase tracking-[0.16em] hover:bg-white/5 hover:text-white ${
-                  active ? "text-spudz-gold" : "text-white/80"
+                className={`rounded-lg px-2 py-3 text-sm font-black uppercase tracking-[0.16em] hover:bg-spudz-gold/20 hover:text-spudz-black ${
+                  active ? "text-spudz-gold" : "text-spudz-ink/80"
                 }`}
               >
                 {item.label}
@@ -102,7 +102,7 @@ export default function Navbar() {
           <Link
             href="/menu"
             onClick={() => setOpen(false)}
-            className="mt-2 rounded-full bg-spudz-red px-5 py-3 text-center text-sm font-black uppercase tracking-[0.14em] text-white"
+            className="mt-2 rounded-full bg-spudz-red px-5 py-3 text-center text-sm font-black uppercase tracking-[0.14em] text-spudz-black"
           >
             Order Now
           </Link>

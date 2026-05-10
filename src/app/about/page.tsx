@@ -31,21 +31,21 @@ const identityDetails = [
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-spudz-black px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20">
+      <section className="bg-white px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.98fr_0.82fr] lg:items-end">
           <div className="max-w-4xl">
             <p className="mb-4 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">Founder's Message</p>
-            <h1 className="font-display text-5xl font-black uppercase leading-[0.9] tracking-normal text-white sm:text-7xl lg:text-8xl">
+            <h1 className="font-display text-5xl font-black uppercase leading-[0.9] tracking-normal text-spudz-black sm:text-7xl lg:text-8xl">
               <span className="block">The Hearts</span>
               <span className="block">Behind Ms.</span>
               <span className="block">Spudz</span>
             </h1>
-            <p className="mt-7 max-w-3xl text-xl font-bold leading-8 text-spudz-cream sm:text-2xl sm:leading-9">
+            <p className="mt-7 max-w-3xl text-xl font-bold leading-8 text-spudz-ink sm:text-2xl sm:leading-9">
               {founders.visibleStory}
             </p>
             <dl className="mt-9 grid gap-3 sm:grid-cols-3">
               {originMarkers.map((marker) => (
-                <div key={marker.label} className="border border-white/10 bg-white/[0.035] p-4">
+                <div key={marker.label} className="border border-spudz-black/10 bg-spudz-gold/[0.16] p-4">
                   <dt className="text-xs font-black uppercase tracking-[0.18em] text-spudz-muted">{marker.label}</dt>
                   <dd className="mt-2 font-display text-3xl font-black uppercase leading-none text-spudz-gold">{marker.value}</dd>
                 </div>
@@ -53,14 +53,14 @@ export default function AboutPage() {
             </dl>
           </div>
           <figure data-scroll-reveal="right" className="border border-spudz-gold/30 bg-spudz-charcoal p-3 shadow-glow">
-            <div className="overflow-hidden bg-spudz-black">
+            <div className="overflow-hidden bg-white">
               <img
                 src={founders.image}
                 alt={founders.imageAlt}
                 className="h-[520px] w-full object-cover object-bottom sm:h-[640px] lg:h-[700px]"
               />
             </div>
-            <figcaption className="border-t border-spudz-gold/25 bg-spudz-black px-4 py-3 text-sm font-black uppercase tracking-[0.16em] text-spudz-gold">
+            <figcaption className="border-t border-spudz-gold/25 bg-white px-4 py-3 text-sm font-black uppercase tracking-[0.16em] text-spudz-gold">
               {founders.names}
             </figcaption>
           </figure>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                   data-scroll-reveal
                   className={
                     index === 3
-                      ? "my-4 border-l-4 border-spudz-red bg-spudz-gold px-5 py-5 text-2xl font-black uppercase leading-tight text-spudz-black shadow-[8px_8px_0_rgba(8,8,7,0.18)]"
+                      ? "my-4 border-l-4 border-spudz-red bg-spudz-gold px-5 py-5 text-2xl font-black uppercase leading-tight text-spudz-black shadow-[8px_8px_0_rgba(22,36,17,0.18)]"
                       : "py-6 text-xl font-semibold leading-9 text-spudz-ink"
                   }
                 >
@@ -97,7 +97,7 @@ export default function AboutPage() {
               ))}
             </div>
 
-            <div data-scroll-reveal className="mt-10 border-l-4 border-spudz-red bg-white p-6 shadow-[10px_10px_0_rgba(8,8,7,0.12)]">
+            <div data-scroll-reveal className="mt-10 border-l-4 border-spudz-red bg-white p-6 shadow-[10px_10px_0_rgba(22,36,17,0.12)]">
               <p className="text-sm font-black uppercase tracking-[0.16em] text-spudz-red">With love and flavor,</p>
               <p className="mt-3 font-display text-3xl font-black uppercase leading-none text-spudz-black">
                 {founders.names}
@@ -117,22 +117,22 @@ export default function AboutPage() {
           />
           <dl className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {identityDetails.map((detail) => (
-              <div key={detail.label} data-scroll-reveal className="border border-white/10 bg-spudz-black p-5">
+              <div key={detail.label} data-scroll-reveal className="border border-spudz-black/10 bg-white p-5">
                 <dt className="text-xs font-black uppercase tracking-[0.18em] text-spudz-gold">{detail.label}</dt>
-                <dd className="mt-3 text-xl font-black uppercase leading-tight text-white">{detail.value}</dd>
+                <dd className="mt-3 text-xl font-black uppercase leading-tight text-spudz-black">{detail.value}</dd>
               </div>
             ))}
           </dl>
           <div data-scroll-reveal className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/menu"
-              className="inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-[#ff633f]"
+              className="inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-[#c1e5a1]"
             >
               View Menu
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full border border-white/25 px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:border-spudz-gold hover:text-spudz-gold"
+              className="inline-flex items-center justify-center rounded-full border border-spudz-black/25 px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black transition hover:border-spudz-gold hover:text-spudz-gold"
             >
               Book Catering
             </Link>

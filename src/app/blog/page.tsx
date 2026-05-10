@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <>
-      <section className="bg-spudz-black px-4 pb-16 pt-32 sm:px-6 lg:px-8">
+      <section className="bg-white px-4 pb-16 pt-32 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading kicker="Blog" title="Spudz Stories" copy="Original posts from the Ms. Spudz site." as="h1" />
         </div>
@@ -32,12 +32,12 @@ export default function BlogPage() {
               href={`/blog/${post.slug}`}
               data-scroll-reveal
               style={{ "--scroll-delay": `${index * 80}ms` } as CSSProperties}
-              className="group block overflow-hidden border border-white/10 bg-spudz-black"
+              className="group block overflow-hidden border border-spudz-black/10 bg-white"
             >
               <img src={post.image} alt={`${post.title} image`} className="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
               <div className="p-6 sm:p-8">
                 <p className="text-xs font-black uppercase tracking-[0.18em] text-spudz-gold">{post.date}</p>
-                <h2 className="mt-4 font-display text-3xl font-black uppercase leading-tight text-white sm:text-4xl">{post.title}</h2>
+                <h2 className="mt-4 font-display text-3xl font-black uppercase leading-tight text-spudz-black sm:text-4xl">{post.title}</h2>
                 <p className="mt-5 text-base leading-7 text-spudz-muted">{post.preview}</p>
                 <p className="mt-7 text-sm font-black uppercase tracking-[0.16em] text-spudz-gold">Read Post</p>
               </div>

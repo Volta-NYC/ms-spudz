@@ -14,7 +14,7 @@ export default function SectionHeading({ kicker, title, copy, align = "left", as
       {kicker ? (
         <p className="mb-4 text-xs font-black uppercase tracking-[0.24em] text-spudz-gold">{kicker}</p>
       ) : null}
-      <HeadingTag className="font-display text-4xl font-black uppercase leading-[0.95] tracking-normal text-white sm:text-5xl lg:text-6xl">
+      <HeadingTag className="font-display text-4xl font-black uppercase leading-[0.95] tracking-normal text-spudz-black sm:text-5xl lg:text-6xl">
         {title}
       </HeadingTag>
       {copy ? <p className="mt-5 text-lg leading-8 text-spudz-muted">{copy}</p> : null}

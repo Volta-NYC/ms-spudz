@@ -19,39 +19,39 @@ export default function HomePage() {
           alt="Ms. Spudz hero food spread"
           className="motion-hero-image absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,8,7,0.94)_0%,rgba(8,8,7,0.72)_42%,rgba(8,8,7,0.2)_100%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-spudz-black to-transparent" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.94)_0%,rgba(245,255,239,0.76)_42%,rgba(193,229,161,0.24)_100%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white to-transparent" />
 
         <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
           <div className="max-w-4xl">
             <p className="motion-fade-up mb-5 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">{site.homeTagline}</p>
-            <h1 className="motion-fade-up motion-fade-up-delay font-display text-[clamp(4.5rem,15vw,12.5rem)] font-black uppercase leading-[0.78] tracking-normal text-white">
+            <h1 className="motion-fade-up motion-fade-up-delay font-display text-[clamp(4.5rem,15vw,12.5rem)] font-black uppercase leading-[0.78] tracking-normal text-spudz-black">
               Ms.
               <br />
               Spudz
             </h1>
-            <p className="motion-fade-up motion-fade-up-late mt-7 max-w-2xl text-2xl font-black uppercase leading-tight text-spudz-cream sm:text-4xl">
+            <p className="motion-fade-up motion-fade-up-late mt-7 max-w-2xl text-2xl font-black uppercase leading-tight text-spudz-ink sm:text-4xl">
               {site.tagline}
             </p>
             <div className="motion-fade-up motion-fade-up-late mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/menu"
-                className="motion-cta-glow inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-[#ff633f]"
+                className="motion-cta-glow inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-[#c1e5a1]"
               >
                 View Menu
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-full border border-white/25 px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:border-spudz-gold hover:text-spudz-gold"
+                className="inline-flex items-center justify-center rounded-full border border-spudz-black/25 px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black transition hover:border-spudz-gold hover:text-spudz-gold"
               >
                 Catering
               </Link>
             </div>
           </div>
 
-          <div data-scroll-reveal="right" className="motion-fade-up motion-fade-up-late self-end border-l-4 border-spudz-gold bg-spudz-black/72 p-6 backdrop-blur-md">
+          <div data-scroll-reveal="right" className="motion-fade-up motion-fade-up-late self-end border-l-4 border-spudz-gold bg-white/72 p-6 backdrop-blur-md">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-spudz-gold">{founders.names}</p>
-            <p className="mt-4 text-xl font-black uppercase leading-tight text-white">Mother daughter duo. Brooklyn roots. Big potato energy.</p>
+            <p className="mt-4 text-xl font-black uppercase leading-tight text-spudz-black">Mother daughter duo. Brooklyn roots. Big potato energy.</p>
             <p className="mt-4 text-base leading-7 text-spudz-muted">
               {founders.visibleStory}
             </p>
@@ -59,7 +59,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-spudz-black px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             kicker="About"
@@ -77,7 +77,7 @@ export default function HomePage() {
               title="The Core Four"
               copy="The signature items from the ordering side of the original site, shown with current menu pricing."
             />
-            <Link href="/menu" className="text-sm font-black uppercase tracking-[0.16em] text-spudz-gold hover:text-white">
+            <Link href="/menu" className="text-sm font-black uppercase tracking-[0.16em] text-spudz-gold hover:text-spudz-black">
               See Full Menu
             </Link>
           </div>
@@ -96,9 +96,9 @@ export default function HomePage() {
             <p className="mt-1 text-sm font-bold">{site.address}</p>
           </div>
           <div className="flex flex-col gap-2 text-sm font-black sm:flex-row sm:items-center sm:gap-6">
-            <a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a>
-            <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-white">Instagram</a>
-            <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-white">Facebook</a>
+            <a href={`mailto:${site.email}`} className="hover:text-spudz-black">{site.email}</a>
+            <a href={site.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-spudz-black">Instagram</a>
+            <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-spudz-black">Facebook</a>
           </div>
         </div>
       </section>

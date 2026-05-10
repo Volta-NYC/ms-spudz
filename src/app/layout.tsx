@@ -45,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} min-h-screen bg-spudz-black font-sans text-spudz-cream antialiased`}>
+      <body className={`${inter.variable} min-h-screen bg-white font-sans text-spudz-ink antialiased`}>
         <Navbar />
         <ScrollReveal />
         <main className="min-h-screen">{children}</main>

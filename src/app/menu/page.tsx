@@ -24,15 +24,15 @@ const menuImageOverrides: Record<string, string> = {
 export default function MenuPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-spudz-black px-4 pb-14 pt-32 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-white px-4 pb-14 pt-32 sm:px-6 lg:px-8">
         <div className="absolute inset-y-0 right-0 hidden w-[52%] overflow-hidden lg:block">
           <img src="/assets/images/signature-fries-product.jpg" alt="" className="motion-hero-image h-full w-full object-cover opacity-35" />
-          <div className="absolute inset-0 bg-gradient-to-r from-spudz-black via-spudz-black/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/70 to-transparent" />
         </div>
         <div className="relative mx-auto max-w-7xl">
           <div className="max-w-4xl">
             <p className="motion-fade-up mb-4 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">Ms. Spudz Menu</p>
-            <h1 className="motion-fade-up motion-fade-up-delay font-display text-[clamp(2.95rem,12vw,5rem)] font-black uppercase leading-[0.9] tracking-normal text-white sm:text-8xl lg:text-9xl">
+            <h1 className="motion-fade-up motion-fade-up-delay font-display text-[clamp(2.95rem,12vw,5rem)] font-black uppercase leading-[0.9] tracking-normal text-spudz-black sm:text-8xl lg:text-9xl">
               Everything Potato.
             </h1>
             <p className="motion-fade-up motion-fade-up-late mt-7 max-w-2xl text-xl leading-8 text-spudz-muted">
@@ -46,39 +46,39 @@ export default function MenuPage() {
             <span className="rounded-full border border-spudz-gold/50 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-spudz-gold">
               9 sauces
             </span>
-            <span className="rounded-full border border-white/15 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-white">
+            <span className="rounded-full border border-spudz-black/15 px-4 py-2 text-sm font-black uppercase tracking-[0.14em] text-spudz-black">
               {site.location}
             </span>
           </div>
         </div>
       </section>
 
-      <nav className="sticky top-[68px] z-30 border-y border-white/10 bg-spudz-black/95 px-4 py-3 backdrop-blur-xl sm:px-6 lg:px-8" aria-label="Menu sections">
+      <nav className="sticky top-[68px] z-30 border-y border-spudz-black/10 bg-white/95 px-4 py-3 backdrop-blur-xl sm:px-6 lg:px-8" aria-label="Menu sections">
         <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto">
           {menuSections.map((section) => (
             <a
               key={section.id}
               href={`#${section.id}`}
-              className="whitespace-nowrap rounded-full border border-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-white/78 transition duration-300 hover:-translate-y-0.5 hover:border-spudz-gold hover:text-spudz-gold focus-visible:border-spudz-gold focus-visible:text-spudz-gold focus-visible:outline-none"
+              className="whitespace-nowrap rounded-full border border-spudz-black/10 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-spudz-ink/78 transition duration-300 hover:-translate-y-0.5 hover:border-spudz-gold hover:text-spudz-gold focus-visible:border-spudz-gold focus-visible:text-spudz-gold focus-visible:outline-none"
             >
               {section.title}
             </a>
           ))}
           <a
             href="#sauces"
-            className="whitespace-nowrap rounded-full border border-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-white/78 transition duration-300 hover:-translate-y-0.5 hover:border-spudz-gold hover:text-spudz-gold focus-visible:border-spudz-gold focus-visible:text-spudz-gold focus-visible:outline-none"
+            className="whitespace-nowrap rounded-full border border-spudz-black/10 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-spudz-ink/78 transition duration-300 hover:-translate-y-0.5 hover:border-spudz-gold hover:text-spudz-gold focus-visible:border-spudz-gold focus-visible:text-spudz-gold focus-visible:outline-none"
           >
             Dipping Sauces
           </a>
         </div>
       </nav>
 
-      <div className="bg-spudz-black">
+      <div className="bg-white">
         {menuSections.map((section, sectionIndex) => (
           <section
             key={section.id}
             id={section.id}
-            className={`scroll-mt-32 px-4 py-20 sm:px-6 lg:px-8 ${sectionIndex % 2 === 0 ? "bg-spudz-black" : "bg-spudz-charcoal"}`}
+            className={`scroll-mt-32 px-4 py-20 sm:px-6 lg:px-8 ${sectionIndex % 2 === 0 ? "bg-white" : "bg-spudz-charcoal"}`}
           >
             {(() => {
               const useFullDescription = "useFullDescription" in section && section.useFullDescription
@@ -112,7 +112,7 @@ export default function MenuPage() {
           </section>
         ))}
 
-        <section id="sauces" className="scroll-mt-32 bg-[#0d0c0a] px-4 py-20 sm:px-6 lg:px-8">
+        <section id="sauces" className="scroll-mt-32 bg-white px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionHeading
               kicker="Sauce Menu"
@@ -125,11 +125,11 @@ export default function MenuPage() {
                   key={sauce.name}
                   data-scroll-reveal
                   style={{ "--scroll-delay": `${Math.min(index * 45, 300)}ms` } as CSSProperties}
-                  className="grid grid-cols-[96px_1fr] gap-5 border border-white/10 bg-spudz-gold/[0.06] p-4 transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/55 hover:bg-spudz-gold/[0.1]"
+                  className="grid grid-cols-[96px_1fr] gap-5 border border-spudz-black/10 bg-spudz-gold/[0.06] p-4 transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/55 hover:bg-spudz-gold/[0.1]"
                 >
                   <img src={sauce.image} alt={`${sauce.name} dipping sauce`} className="h-24 w-24 object-cover" loading="lazy" />
                   <div>
-                    <h3 className="text-lg font-black uppercase leading-tight text-white">{sauce.name}</h3>
+                    <h3 className="text-lg font-black uppercase leading-tight text-spudz-black">{sauce.name}</h3>
                     <p className="mt-2 text-sm leading-6 text-spudz-muted">{sauce.description}</p>
                   </div>
                 </article>

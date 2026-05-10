@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function ReviewsPage() {
   return (
     <>
-      <section className="bg-spudz-black px-4 pb-16 pt-32 sm:px-6 lg:px-8">
+      <section className="bg-white px-4 pb-16 pt-32 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <SectionHeading
             kicker="Reviews"
@@ -29,7 +29,7 @@ export default function ReviewsPage() {
             target="_blank"
             rel="noopener noreferrer"
             data-scroll-reveal
-            className="inline-flex justify-center rounded-full bg-spudz-red px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:bg-[#ff633f]"
+            className="inline-flex justify-center rounded-full bg-spudz-red px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black transition hover:bg-[#c1e5a1]"
           >
             Leave A Google Review
           </a>
@@ -43,10 +43,10 @@ export default function ReviewsPage() {
           </div>
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {reviews.map((review) => (
-              <article key={`${review.reviewer}-${review.date}`} data-scroll-reveal className="flex min-h-[260px] flex-col justify-between border border-white/10 bg-spudz-black p-6">
+              <article key={`${review.reviewer}-${review.date}`} data-scroll-reveal className="flex min-h-[260px] flex-col justify-between border border-spudz-black/10 bg-white p-6">
                 <p className="text-lg leading-8 text-spudz-muted">"{review.text}"</p>
-                <div className="mt-8 border-t border-white/10 pt-5">
-                  <h2 className="text-xl font-black uppercase text-white">{review.reviewer}</h2>
+                <div className="mt-8 border-t border-spudz-black/10 pt-5">
+                  <h2 className="text-xl font-black uppercase text-spudz-black">{review.reviewer}</h2>
                   <p className="mt-1 text-sm font-bold text-spudz-gold">{review.date}</p>
                 </div>
               </article>

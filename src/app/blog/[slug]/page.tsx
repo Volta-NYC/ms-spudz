@@ -39,18 +39,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <article className="bg-spudz-black px-4 pb-20 pt-32 sm:px-6 lg:px-8">
+    <article className="bg-white px-4 pb-20 pt-32 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl">
-        <Link href="/blog" className="text-sm font-black uppercase tracking-[0.16em] text-spudz-gold hover:text-white">
+        <Link href="/blog" className="text-sm font-black uppercase tracking-[0.16em] text-spudz-gold hover:text-spudz-black">
           Back To Blog
         </Link>
         <p className="mt-10 text-xs font-black uppercase tracking-[0.2em] text-spudz-gold">{post.date}</p>
-        <h1 className="mt-4 font-display text-5xl font-black uppercase leading-[0.95] tracking-normal text-white sm:text-7xl">
+        <h1 className="mt-4 font-display text-5xl font-black uppercase leading-[0.95] tracking-normal text-spudz-black sm:text-7xl">
           {post.title}
         </h1>
       </div>
 
-      <div data-scroll-reveal className="mx-auto mt-10 max-w-5xl overflow-hidden border border-white/10">
+      <div data-scroll-reveal className="mx-auto mt-10 max-w-5xl overflow-hidden border border-spudz-black/10">
         <img src={post.image} alt={`${post.title} image`} className="max-h-[620px] w-full object-cover" />
       </div>
 
@@ -58,7 +58,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {post.blocks.map((block, index) => (
           <section key={block.heading ?? index} data-scroll-reveal className="space-y-5">
             {block.heading ? (
-              <h2 className="font-display text-3xl font-black uppercase leading-tight text-white sm:text-4xl">
+              <h2 className="font-display text-3xl font-black uppercase leading-tight text-spudz-black sm:text-4xl">
                 {block.heading}
               </h2>
             ) : null}

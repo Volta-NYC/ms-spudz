@@ -13,7 +13,7 @@ export default function MenuCard({ item, description, featured = false, animatio
     <article
       data-scroll-reveal
       style={animationDelay ? ({ "--scroll-delay": animationDelay } as CSSProperties) : undefined}
-      className={`group overflow-hidden border border-white/10 bg-white/[0.035] transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/45 ${
+      className={`group overflow-hidden border border-spudz-black/10 bg-spudz-gold/[0.16] transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/45 ${
         featured ? "grid lg:grid-cols-[0.95fr_1.05fr]" : ""
       }`}
     >
@@ -30,7 +30,7 @@ export default function MenuCard({ item, description, featured = false, animatio
       <div className={featured ? "flex min-h-full flex-col justify-between p-6 sm:p-8" : "p-5 sm:p-6"}>
         <div>
           <div className="mb-5 flex flex-wrap items-start justify-between gap-4">
-            <h3 className="font-display text-2xl font-black uppercase leading-none text-white sm:text-3xl">
+            <h3 className="font-display text-2xl font-black uppercase leading-none text-spudz-black sm:text-3xl">
               {item.name}
             </h3>
             <p className="max-w-full rounded-full bg-spudz-gold px-3 py-1 text-center text-xs font-black leading-tight text-spudz-black sm:text-sm">
