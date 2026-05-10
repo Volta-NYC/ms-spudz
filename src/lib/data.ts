@@ -251,10 +251,24 @@ export const sauces = [
 ]
 
 export const founders = {
-  names: "Tinnette & Chel'Si",
-  title: "Flavor Visionary & Founders",
+  names: "Tinnette (Pippi) & Chel’Si",
+  title: "Founder | Flavor Visionary | Granddaughter-approved",
+  image: "/assets/images/owner.jpg",
+  imageAlt: "Tinnette and Chel’Si at a Ms. Spudz event",
   visibleStory:
-    "We are the mother daughter duo and hearts behind Ms. Spudz – Everything Potato: \"No\" Gravy. Based in planet Brooklyn, our story started back in 2012 at a local farmers market (ENY Farms) and neighborhood festivals — just a table, tent and fryer - and a big dream. I ...",
+    "We are the mother daughter duo and hearts behind Ms. Spudz – Everything Potato: “No” Gravy. Based in planet Brooklyn, our story started back in 2012 at a local farmers market (ENY Farms) and neighborhood festivals — just a table, tent and fryer - and a big dream.",
+  aboutStory: [
+    "We are the mother daughter duo and hearts behind Ms. Spudz – Everything Potato: “No” Gravy. Based in planet Brooklyn, our story started back in 2012 at a local farmers market (ENY Farms) and neighborhood festivals — just a table, tent and fryer - and a big dream.",
+    "I used to imagine myself with a French fry cart, similar to a hot dog vendor, serving up something simple but full of soul. For a long time, I talked myself out of what I would eventually convince myself was inevitable. I kept thinking, “No one would buy just fries?” But deep down, I knew I had something special — something worth sharing. So, I stepped out on faith and followed the vision that would eventually bring me here with you today.",
+    "Ms. Spudz is an all-potato-based food outlet with flavor at its core. We specialize in fresh-cut fries, chips, seafood, tacos, nachos, and more — all served with our signature gourmet dipping sauces, ranging from mild, to sweet, to spicy with delicious and bold flavors.",
+    "But the heart of our menu? Grandma’s Original dipping Sauce.",
+    "This is the recipe that started it all. Introduced to me as a little girl by my grandmother when we cooked meals to serve the community, this sauce carries her spirit and approval. It’s more than just a best-seller — it’s a reminder of who I am, where I come from, and why I serve. She always told me, “Presentation is everything.” And we bring that into every plate we prepare knowing customers eat with their eyes first.",
+    "Our fries are cut fresh from whole potatoes, soaked in a cold-water bath to reduce the starch, then double fried for that perfect crisp, with the fluffiest interior. They’re so rich and satisfying, you really don’t need much more — just a little dip of flavor, a little bit of soul.",
+    "Ms. Spudz is a seasonal business and a love letter to comfort food, typically running from May through November — the time when the city’s alive and cravings hit the hardest.",
+    "We proudly serve a diverse and hungry crowd: from families to college students, late-night foodies to hardworking professionals. But above all, we serve people who love flavor, culture, and food that feels like home.",
+    "From our Brooklyn roots to our five-borough vision, Ms. Spudz is building something bold — a brand that celebrates tradition, reinvents street food, and brings people together, one potato at a time.",
+    "Thanks for being part of this journey. I can’t wait to serve you soon.",
+  ],
   timeline: [
     { year: "2012", text: "Story started at a local farmers market, ENY Farms." },
     { year: "Brooklyn", text: "Built through neighborhood festivals and local areas." },
