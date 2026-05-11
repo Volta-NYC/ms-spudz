@@ -30,7 +30,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-spudz-black/10 bg-white/88 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-spudz-black/20 bg-white shadow-[0_10px_24px_rgba(22,36,17,0.12)]">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Main navigation">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img src="/assets/images/icon.png" alt="Ms. Spudz icon" className="h-12 w-12 shrink-0 object-contain" />
@@ -57,7 +57,7 @@ export default function Navbar() {
             )
           })}
           <Link
-            href="/menu"
+            href="/order"
             className="rounded-full bg-spudz-red px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-spudz-gold"
           >
             Order Now
@@ -100,7 +100,7 @@ export default function Navbar() {
             )
           })}
           <Link
-            href="/menu"
+            href="/order"
             onClick={() => setOpen(false)}
             className="mt-2 rounded-full bg-spudz-red px-5 py-3 text-center text-sm font-black uppercase tracking-[0.14em] text-spudz-black"
           >
