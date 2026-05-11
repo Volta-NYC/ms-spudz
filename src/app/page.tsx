@@ -19,7 +19,7 @@ export default function HomePage() {
           alt="Ms. Spudz hero food spread"
           className="motion-hero-image absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.68)_0%,rgba(245,255,239,0.42)_42%,rgba(193,229,161,0.1)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.82)_0%,rgba(245,255,239,0.58)_42%,rgba(167,218,121,0.14)_100%)]" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white to-transparent" />
 
         <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
@@ -36,7 +36,7 @@ export default function HomePage() {
             <div className="motion-fade-up motion-fade-up-late mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/menu"
-                className="motion-cta-glow inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-[#c1e5a1]"
+                className="motion-cta-glow inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-spudz-gold"
               >
                 View Menu
               </Link>
@@ -49,10 +49,10 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div data-scroll-reveal="right" className="motion-fade-up motion-fade-up-late self-end border-l-4 border-spudz-gold bg-white/72 p-6 backdrop-blur-md">
+          <div data-scroll-reveal="right" className="motion-fade-up motion-fade-up-late self-end border border-spudz-black/15 border-l-4 border-l-spudz-gold bg-white/90 p-7 shadow-[0_20px_40px_rgba(22,36,17,0.18)] backdrop-blur-md">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-spudz-gold">{founders.names}</p>
-            <p className="mt-4 text-xl font-black uppercase leading-tight text-spudz-black">Mother daughter duo. Brooklyn roots. Big potato energy.</p>
-            <p className="mt-4 text-base leading-7 text-spudz-muted">
+            <p className="mt-4 text-xl font-black uppercase leading-tight text-spudz-black">Mother-daughter duo. Brooklyn roots. Big potato energy.</p>
+            <p className="mt-4 text-[1.05rem] leading-7 text-spudz-ink">
               {founders.visibleStory}
             </p>
           </div>
@@ -83,7 +83,13 @@ export default function HomePage() {
           </div>
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {signatureItems.map((item) => (
-              <MenuCard key={item.id} item={item} description={item.fullDescription ?? item.description} />
+              <MenuCard
+                key={item.id}
+                item={item}
+                description={item.description}
+                expandedDescription={item.fullDescription ?? item.description}
+                expandableDescription
+              />
             ))}
           </div>
         </div>

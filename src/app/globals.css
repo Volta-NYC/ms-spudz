@@ -23,7 +23,7 @@ body {
 }
 
 ::selection {
-  background: #c1e5a1;
+  background: #a7da79;
   color: #162411;
 }
 
@@ -50,10 +50,10 @@ body {
 @keyframes spudz-glow {
   0%,
   100% {
-    box-shadow: 0 18px 52px rgba(193, 229, 161, 0.28);
+    box-shadow: 0 18px 52px rgba(167, 218, 121, 0.28);
   }
   50% {
-    box-shadow: 0 22px 70px rgba(193, 229, 161, 0.46);
+    box-shadow: 0 22px 70px rgba(167, 218, 121, 0.46);
   }
 }
 

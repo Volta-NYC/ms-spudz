@@ -58,7 +58,7 @@ export default function Navbar() {
           })}
           <Link
             href="/menu"
-            className="rounded-full bg-spudz-red px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-[#c1e5a1]"
+            className="rounded-full bg-spudz-red px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-spudz-gold"
           >
             Order Now
           </Link>

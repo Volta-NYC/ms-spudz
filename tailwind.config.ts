@@ -9,10 +9,11 @@ const config: Config = {
           black: "#162411",
           charcoal: "#f5ffef",
           ink: "#25331f",
-          gold: "#c1e5a1",
-          red: "#c1e5a1",
+          gold: "#a7da79",
+          red: "#a7da79",
           cream: "#ffffff",
           muted: "#53664d",
+          volta: "#85cc17",
         },
       },
       fontFamily: {
@@ -20,7 +21,7 @@ const config: Config = {
         sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        glow: "0 24px 80px rgba(193, 229, 161, 0.34)",
+        glow: "0 24px 80px rgba(167, 218, 121, 0.34)",
       },
     },
   },

@@ -29,7 +29,7 @@ export default function ReviewsPage() {
             target="_blank"
             rel="noopener noreferrer"
             data-scroll-reveal
-            className="inline-flex justify-center rounded-full bg-spudz-red px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black transition hover:bg-[#c1e5a1]"
+            className="inline-flex justify-center rounded-full bg-spudz-red px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black transition hover:bg-spudz-gold"
           >
             Leave A Google Review
           </a>

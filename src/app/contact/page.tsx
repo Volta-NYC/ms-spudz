@@ -75,7 +75,7 @@ export default function ContactPage() {
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <p className="text-sm font-black uppercase tracking-[0.14em] text-spudz-gold">72-hour advance notice requested</p>
-              <button type="button" className="rounded-full bg-spudz-red px-6 py-3 text-sm font-black uppercase tracking-[0.14em] text-spudz-black transition hover:bg-[#c1e5a1]">
+              <button type="button" className="rounded-full bg-spudz-red px-6 py-3 text-sm font-black uppercase tracking-[0.14em] text-spudz-black transition hover:bg-spudz-gold">
                 Prepare Request
               </button>
             </div>

@@ -10,6 +10,17 @@ export default function Footer() {
             Everything Potato 'No' Gravy. Brooklyn-based, community-focused, and built around fresh-cut potatoes.
           </p>
           <p className="mt-6 text-sm text-spudz-muted">© {new Date().getFullYear()} Ms. Spudz</p>
+          <p className="mt-2 text-sm text-spudz-muted">
+            Made by{" "}
+            <a
+              href="https://voltanyc.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-spudz-volta hover:underline"
+            >
+              Volta
+            </a>
+          </p>
         </div>
 
         <div>

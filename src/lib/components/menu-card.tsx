@@ -1,14 +1,31 @@
+"use client"
+
+import { useState } from "react"
 import type { FoodItem } from "@/lib/data"
 import type { CSSProperties } from "react"
 
 type MenuCardProps = {
   item: FoodItem
   description?: string
+  expandedDescription?: string
+  expandableDescription?: boolean
   featured?: boolean
   animationDelay?: string
 }
 
-export default function MenuCard({ item, description, featured = false, animationDelay }: MenuCardProps) {
+export default function MenuCard({
+  item,
+  description,
+  expandedDescription,
+  expandableDescription = false,
+  featured = false,
+  animationDelay,
+}: MenuCardProps) {
+  const [expanded, setExpanded] = useState(false)
+  const shortDescription = description ?? item.description
+  const longDescription = expandedDescription ?? shortDescription
+  const canExpand = expandableDescription && longDescription.trim() !== shortDescription.trim()
+
   return (
     <article
       data-scroll-reveal
@@ -37,7 +54,17 @@ export default function MenuCard({ item, description, featured = false, animatio
               {item.price}
             </p>
           </div>
-          <p className="text-base leading-7 text-spudz-muted">{description ?? item.description}</p>
+          <p className="text-base leading-7 text-spudz-muted">{expanded && canExpand ? longDescription : shortDescription}</p>
+          {canExpand ? (
+            <button
+              type="button"
+              onClick={() => setExpanded((current) => !current)}
+              className="mt-3 text-xs font-black uppercase tracking-[0.14em] text-spudz-black/70 transition hover:text-spudz-black"
+              aria-expanded={expanded}
+            >
+              {expanded ? "Show less" : "Show more"}
+            </button>
+          ) : null}
         </div>
         {item.sizes ? (
           <div className="mt-7 flex flex-wrap gap-2">

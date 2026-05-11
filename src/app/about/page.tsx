@@ -126,7 +126,7 @@ export default function AboutPage() {
           <div data-scroll-reveal className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/menu"
-              className="inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-[#c1e5a1]"
+              className="inline-flex items-center justify-center rounded-full bg-spudz-red px-7 py-4 text-sm font-black uppercase tracking-[0.14em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-spudz-gold"
             >
               View Menu
             </Link>

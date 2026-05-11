@@ -16,7 +16,7 @@ export const site = {
   instagram: "https://www.instagram.com/Msspudz_epng",
   facebook: "https://www.facebook.com/MsSpudz",
   googleReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJD1svfi5dwokRdu_9rW9cg9E",
-  heroImage: "/assets/images/hero.jpg",
+  heroImage: "/assets/images/blog-history-french-fries.jpg",
   logoImage: "/assets/images/icon.png",
 }
 
@@ -256,7 +256,7 @@ export const founders = {
   image: "/assets/images/owner.jpg",
   imageAlt: "Tinnette and Chel’Si at a Ms. Spudz event",
   visibleStory:
-    "We are the mother daughter duo and hearts behind Ms. Spudz – Everything Potato: “No” Gravy. Based in planet Brooklyn, our story started back in 2012 at a local farmers market (ENY Farms) and neighborhood festivals — just a table, tent and fryer - and a big dream.",
+    "We're the mother-daughter duo and hearts behind Ms. Spudz - Everything Potato \"No\" Gravy. Based in Brooklyn, our story started in 2012 at ENY Farms and neighborhood festivals with just a table, a tent, a fryer, and a big dream.",
   aboutStory: [
     "We are the mother daughter duo and hearts behind Ms. Spudz – Everything Potato: “No” Gravy. Based in planet Brooklyn, our story started back in 2012 at a local farmers market (ENY Farms) and neighborhood festivals — just a table, tent and fryer - and a big dream.",
     "I used to imagine myself with a French fry cart, similar to a hot dog vendor, serving up something simple but full of soul. For a long time, I talked myself out of what I would eventually convince myself was inevitable. I kept thinking, “No one would buy just fries?” But deep down, I knew I had something special — something worth sharing. So, I stepped out on faith and followed the vision that would eventually bring me here with you today.",
