@@ -48,8 +48,8 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 aria-current={active ? "page" : undefined}
-                className={`text-sm font-bold uppercase tracking-[0.14em] transition ${
-                  active ? "text-spudz-gold" : "text-spudz-ink/72 hover:text-spudz-black"
+                className={`text-sm font-bold uppercase tracking-[0.14em] decoration-2 underline-offset-4 transition ${
+                  active ? "text-spudz-gold underline" : "text-spudz-ink/72 hover:text-spudz-black hover:underline"
                 }`}
               >
                 {item.label}
@@ -58,7 +58,7 @@ export default function Navbar() {
           })}
           <Link
             href="/order"
-            className="rounded-full bg-spudz-red px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-spudz-black shadow-glow transition hover:-translate-y-0.5 hover:bg-spudz-gold"
+            className="rounded-full bg-spudz-red px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-spudz-black shadow-glow decoration-2 underline-offset-4 transition hover:-translate-y-0.5 hover:bg-spudz-gold hover:underline"
           >
             Order Now
           </Link>
@@ -91,7 +91,7 @@ export default function Navbar() {
                 href={item.href}
                 aria-current={active ? "page" : undefined}
                 onClick={() => setOpen(false)}
-                className={`rounded-lg px-2 py-3 text-sm font-black uppercase tracking-[0.16em] hover:bg-spudz-gold/20 hover:text-spudz-black ${
+                className={`rounded-lg px-2 py-3 text-sm font-black uppercase tracking-[0.16em] decoration-2 underline-offset-4 hover:bg-spudz-gold/20 hover:text-spudz-black hover:underline ${
                   active ? "text-spudz-gold" : "text-spudz-ink/80"
                 }`}
               >
@@ -102,7 +102,7 @@ export default function Navbar() {
           <Link
             href="/order"
             onClick={() => setOpen(false)}
-            className="mt-2 rounded-full bg-spudz-red px-5 py-3 text-center text-sm font-black uppercase tracking-[0.14em] text-spudz-black"
+            className="mt-2 rounded-full bg-spudz-red px-5 py-3 text-center text-sm font-black uppercase tracking-[0.14em] text-spudz-black decoration-2 underline-offset-4 hover:underline"
           >
             Order Now
           </Link>

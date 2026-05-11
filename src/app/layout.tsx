@@ -2,6 +2,7 @@ import "./globals.css"
 import Navbar from "@/lib/components/navbar"
 import Footer from "@/lib/components/footer"
 import ScrollReveal from "@/lib/components/scroll-reveal"
+import PotatoCursor from "@/lib/components/potato-cursor"
 import { Inter } from "next/font/google"
 import type { Metadata } from "next"
 
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body className={`${inter.variable} min-h-screen bg-white font-sans text-spudz-ink antialiased`}>
         <Navbar />
         <ScrollReveal />
+        <PotatoCursor />
         <main className="min-h-screen">{children}</main>
         <Footer />
       </body>

@@ -24,7 +24,9 @@ export default function HomePage() {
 
         <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
           <div className="max-w-4xl">
-            <p className="motion-fade-up mb-5 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">{site.homeTagline}</p>
+            <p className="motion-fade-up mb-5 inline-flex rounded-full border border-spudz-black/20 bg-white/92 px-4 py-2 text-sm font-black uppercase tracking-[0.22em] text-spudz-black shadow-[0_8px_22px_rgba(22,36,17,0.18)]">
+              {site.homeTagline}
+            </p>
             <h1 className="motion-fade-up motion-fade-up-delay font-display text-[clamp(3.9rem,12vw,10rem)] font-black uppercase leading-[0.78] tracking-normal text-spudz-black">
               Ms.
               <br />

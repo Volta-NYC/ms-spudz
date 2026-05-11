@@ -22,6 +22,34 @@ body {
   overflow-x: hidden;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  html,
+  body,
+  a,
+  button,
+  [role="button"],
+  input,
+  textarea,
+  select,
+  label,
+  summary {
+    cursor: url("/assets/cursors/potato.svg") 14 10, auto;
+  }
+
+  html.cursor-baked,
+  html.cursor-baked body,
+  html.cursor-baked a,
+  html.cursor-baked button,
+  html.cursor-baked [role="button"],
+  html.cursor-baked input,
+  html.cursor-baked textarea,
+  html.cursor-baked select,
+  html.cursor-baked label,
+  html.cursor-baked summary {
+    cursor: url("/assets/cursors/baked-potato.svg") 14 10, auto !important;
+  }
+}
+
 ::selection {
   background: #a7da79;
   color: #162411;
