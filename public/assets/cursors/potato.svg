@@ -3,45 +3,39 @@
 
   <!-- Outer potato silhouette -->
   <g fill="#7b532e">
-    <rect x="14" y="6" width="4" height="2"/>
-    <rect x="10" y="8" width="12" height="2"/>
-    <rect x="8" y="10" width="16" height="2"/>
-    <rect x="6" y="12" width="20" height="2"/>
-    <rect x="6" y="14" width="20" height="2"/>
-    <rect x="4" y="16" width="24" height="2"/>
-    <rect x="4" y="18" width="24" height="2"/>
-    <rect x="6" y="20" width="20" height="2"/>
-    <rect x="6" y="22" width="20" height="2"/>
-    <rect x="8" y="24" width="16" height="2"/>
-    <rect x="10" y="26" width="12" height="2"/>
-    <rect x="14" y="28" width="4" height="2"/>
+    <rect x="10" y="9" width="12" height="2"/>
+    <rect x="7" y="11" width="18" height="2"/>
+    <rect x="4" y="13" width="24" height="2"/>
+    <rect x="3" y="15" width="26" height="2"/>
+    <rect x="2" y="17" width="28" height="2"/>
+    <rect x="3" y="19" width="26" height="2"/>
+    <rect x="4" y="21" width="24" height="2"/>
+    <rect x="7" y="23" width="18" height="2"/>
+    <rect x="10" y="25" width="12" height="2"/>
   </g>
 
   <!-- Inner fill -->
   <g fill="#b88753">
-    <rect x="12" y="8" width="8" height="2"/>
-    <rect x="10" y="10" width="12" height="2"/>
-    <rect x="8" y="12" width="16" height="2"/>
-    <rect x="8" y="14" width="16" height="2"/>
-    <rect x="6" y="16" width="20" height="2"/>
-    <rect x="6" y="18" width="20" height="2"/>
-    <rect x="8" y="20" width="16" height="2"/>
-    <rect x="8" y="22" width="16" height="2"/>
-    <rect x="10" y="24" width="12" height="2"/>
-    <rect x="12" y="26" width="8" height="2"/>
+    <rect x="10" y="11" width="12" height="2"/>
+    <rect x="7" y="13" width="18" height="2"/>
+    <rect x="5" y="15" width="22" height="2"/>
+    <rect x="4" y="17" width="24" height="2"/>
+    <rect x="5" y="19" width="22" height="2"/>
+    <rect x="7" y="21" width="18" height="2"/>
+    <rect x="10" y="23" width="12" height="2"/>
   </g>
 
   <!-- Subtle highlight -->
   <g fill="#e2c391">
-    <rect x="12" y="12" width="4" height="2"/>
-    <rect x="10" y="14" width="6" height="2"/>
-    <rect x="8" y="16" width="6" height="2"/>
+    <rect x="9" y="13" width="6" height="2"/>
+    <rect x="7" y="15" width="7" height="2"/>
+    <rect x="6" y="17" width="7" height="2"/>
   </g>
 
   <!-- Potato eyes -->
   <g fill="#6a4322">
-    <rect x="18" y="12" width="2" height="2"/>
-    <rect x="20" y="18" width="2" height="2"/>
-    <rect x="14" y="22" width="2" height="2"/>
+    <rect x="19" y="13" width="2" height="2"/>
+    <rect x="22" y="18" width="2" height="2"/>
+    <rect x="15" y="21" width="2" height="2"/>
   </g>
 </svg>
