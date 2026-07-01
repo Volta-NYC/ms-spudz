@@ -11,6 +11,7 @@ const config: Config = {
           ink: "#25331f",
           gold: "#a7da79",
           red: "#a7da79",
+          truck: "#47704c",
           cream: "#ffffff",
           muted: "#53664d",
           volta: "#85cc17",

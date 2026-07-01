@@ -1,5 +1,7 @@
 import Link from "next/link"
 
+import { site } from "@/lib/data"
+
 export default function Footer() {
   return (
     <footer className="border-t border-spudz-black/10 bg-white">
@@ -24,12 +26,14 @@ export default function Footer() {
         </div>
 
         <div>
-          <h2 className="text-xs font-black uppercase tracking-[0.18em] text-spudz-gold">Find Us</h2>
+          <h2 className="text-xs font-black uppercase tracking-[0.18em] text-spudz-gold">Contact</h2>
           <address className="mt-4 not-italic text-sm leading-6 text-spudz-muted">
-            790 Eldert Lane<br />
-            Brooklyn, NY 11208<br />
-            <a className="text-spudz-black hover:text-spudz-gold" href="mailto:msspudzepng@gmail.com">
-              msspudzepng@gmail.com
+            <a className="text-spudz-black hover:text-spudz-gold" href={`tel:${site.phone.replace(/\D/g, "")}`}>
+              {site.phone}
+            </a>
+            <br />
+            <a className="text-spudz-black hover:text-spudz-gold" href={`mailto:${site.email}`}>
+              {site.email}
             </a>
           </address>
           <div className="mt-4 flex gap-3">

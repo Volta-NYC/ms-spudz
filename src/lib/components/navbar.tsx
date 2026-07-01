@@ -56,12 +56,6 @@ export default function Navbar() {
               </Link>
             )
           })}
-          <Link
-            href="/order"
-            className="rounded-full bg-spudz-red px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-spudz-black shadow-glow decoration-2 underline-offset-4 transition hover:-translate-y-0.5 hover:bg-spudz-gold hover:underline"
-          >
-            Order Now
-          </Link>
         </div>
 
         <button
@@ -99,13 +93,6 @@ export default function Navbar() {
               </Link>
             )
           })}
-          <Link
-            href="/order"
-            onClick={() => setOpen(false)}
-            className="mt-2 rounded-full bg-spudz-red px-5 py-3 text-center text-sm font-black uppercase tracking-[0.14em] text-spudz-black decoration-2 underline-offset-4 hover:underline"
-          >
-            Order Now
-          </Link>
         </div>
       </div>
     </header>

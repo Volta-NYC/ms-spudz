@@ -30,7 +30,7 @@ export default function MenuCard({
     <article
       data-scroll-reveal
       style={animationDelay ? ({ "--scroll-delay": animationDelay } as CSSProperties) : undefined}
-      className={`group overflow-hidden border border-spudz-black/10 bg-spudz-gold/[0.16] transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/45 ${
+      className={`group overflow-hidden border border-spudz-black/10 bg-white transition duration-300 hover:-translate-y-1 hover:border-spudz-gold/45 ${
         featured ? "grid lg:grid-cols-[0.95fr_1.05fr]" : ""
       }`}
     >
@@ -50,9 +50,6 @@ export default function MenuCard({
             <h3 className="font-display text-2xl font-black uppercase leading-none text-spudz-black sm:text-3xl">
               {item.name}
             </h3>
-            <p className="max-w-full rounded-full bg-spudz-gold px-3 py-1 text-center text-xs font-black leading-tight text-spudz-black sm:text-sm">
-              {item.price}
-            </p>
           </div>
           <p className="text-base leading-7 text-spudz-muted">{expanded && canExpand ? longDescription : shortDescription}</p>
           {canExpand ? (
@@ -66,15 +63,6 @@ export default function MenuCard({
             </button>
           ) : null}
         </div>
-        {item.sizes ? (
-          <div className="mt-7 flex flex-wrap gap-2">
-            {item.sizes.map((size) => (
-              <span key={size} className="rounded-full border border-spudz-gold/40 px-3 py-1 text-xs font-black uppercase tracking-[0.12em] text-spudz-gold">
-                {size}
-              </span>
-            ))}
-          </div>
-        ) : null}
       </div>
     </article>
   )

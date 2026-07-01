@@ -46,7 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} min-h-screen bg-white font-sans text-spudz-ink antialiased`}>
+      <body className={`${inter.variable} min-h-screen bg-spudz-truck font-sans text-spudz-ink antialiased`}>
         <Navbar />
         <ScrollReveal />
         <PotatoCursor />

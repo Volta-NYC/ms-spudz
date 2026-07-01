@@ -4,7 +4,7 @@ export const site = {
   tagline: "Everything Potato 'No' Gravy",
   homeTagline: "There's a New Girl In Town!",
   type: "Fast Food Outlet",
-  address: "790 Eldert Lane, Brooklyn, NY 11208",
+  phone: "917-284-8014",
   location: "Brooklyn, New York",
   coordinates: {
     lat: 40.6703413,
@@ -21,41 +21,34 @@ export const site = {
 }
 
 export const cateringNotice = [
-  "Planning something special? We've got you covered—from small gatherings to big celebrations!",
-  "For events with fewer than 15 guests, please check out our Menu Page and order directly. For parties of 15 or more, kindly fill out the catering request form below. Make sure to include the date, time, size of your party, your budget per person, the items that you would like to order and other important details.",
-  "We'll review your details and get back to you as soon as possible.",
-  "Thank you for choosing Ms. Spudz – Everything Potato, No Gravy!",
-  "Note: Please submit your request at least 72 hours in advance. Submitting a request does not confirm your order until we follow up with you!",
+  "Kindly fill out the catering form - be sure to include all of the details for your event.",
+  "We'll get back to you as soon as possible.",
+  "Thank you for choosing Ms. Spudz - Everything Potato \"No\" Gravy.",
 ]
 
 export type FoodItem = {
   id: string
   name: string
-  price: string
   description: string
   fullDescription?: string
   image: string
   alt: string
-  sizes?: string[]
 }
 
 export const foodItems: FoodItem[] = [
   {
     id: "signature-fries",
     name: "Signature Fries",
-    price: "$8.99 / $10.50 / $11.50",
     description:
       "Fresh-cut, double-fried, and seasoned to perfection—our Signature Fries are crispy, fluffy, and unforgettable. Pair them with our gourmet dips for the ultimate snack!",
     fullDescription:
       "Our Signature Fries are not your average French fry! We start with fresh-cut potatoes that are soaked in cool water, removing excess starch and ensuring a crispy exterior and fluffy interior. Then, we double-fry them to perfection for the ultimate crunch. Our secret seasoning blend adds the perfect touch of flavor, making these fries truly unforgettable. Try them with our gourmet dipping sauces for an even more satisfying experience!",
-    sizes: ["Small $8.99", "Medium $10.50", "Large $11.50"],
     image: "/assets/images/signature-fries-product.jpg",
     alt: "Signature fries from Ms. Spudz",
   },
   {
     id: "loaded-mash",
     name: "Loaded Mash",
-    price: "$9.99",
     description:
       "Our signature fries, or rustic skin on mashed potatoes, are topped with cheese, corn, black beans, broccoli, tomatoes, and scallions.",
     fullDescription:
@@ -66,7 +59,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "fish-tacos",
     name: "Fish Tacos",
-    price: "$14.99",
     description:
       "2 tortillas w/ of golden and crispy fried fish, cilantro lime slaw, white sauce, tomatoes and scallions w/ Signature fries",
     fullDescription:
@@ -77,7 +69,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "fish-sliders",
     name: "Fish Sliders",
-    price: "$11.99",
     description: "2 sliders with crispy fried fish with zesty slaw and Ms. Spudz Signature fries",
     fullDescription:
       "Crispy fried fish tucked in a soft bun, topped with fresh fixings and our signature sauce—small in size, big on flavor!",
@@ -87,7 +78,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "double-truffle-fries",
     name: "Double Truffle Fries",
-    price: "$12.50",
     description: "Ms. Spudz signature fries tossed in truffle oil, truffle seasoning and fresh parsley",
     image: "/assets/images/double-truffle-fries.jpg",
     alt: "Double truffle fries from Ms. Spudz",
@@ -95,7 +85,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "fish-n-bag",
     name: "Fish N' Bag",
-    price: "$7.99",
     description:
       "Golden, crispy fried fish served hot and crunchy—pair it with our gourmet dips for a flavor-packed bite you'll keep coming back for!",
     image: "/assets/images/fish-n-bag.jpg",
@@ -104,7 +93,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "fish-and-fries",
     name: "Fish & Fries",
-    price: "$15.99",
     description: "Our golden, crispy fried fish and shrimp meals come with fries and your choice of gourmet dipping sauce.",
     image: "/assets/images/fish-and-fries.jpg",
     alt: "Fish and fries from Ms. Spudz",
@@ -112,7 +100,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "shrimp-and-fries",
     name: "Shrimp & Fries",
-    price: "$16.99",
     description: "Crispy golden shrimp with fries",
     image: "/assets/images/shrimp-and-fries.jpg",
     alt: "Shrimp and fries from Ms. Spudz",
@@ -120,7 +107,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "the-combo",
     name: "The Combo",
-    price: "$22.99",
     description: "Our golden, crispy fried fish and shrimp meals come with fries and your choice of gourmet dipping sauce.",
     image: "/assets/images/the-combo.jpg",
     alt: "Fish and shrimp combo from Ms. Spudz",
@@ -128,7 +114,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "veggie-tacos",
     name: "Veggie Tacos",
-    price: "$9.99",
     description:
       "2 kale tacos with chic peas, red beans, red onions, cucumber, tomatoes, white sauce & Signature fries",
     image: "/assets/images/veggie-tacos.jpg",
@@ -137,7 +122,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "chop-cheese-sliders",
     name: "Chop Cheese Sliders",
-    price: "$10.99",
     description: "2 meat sliders w/ provolone cheese & Signature fries",
     image: "/assets/images/chop-cheese-sliders.jpg",
     alt: "Chop cheese sliders from Ms. Spudz",
@@ -145,7 +129,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "loaded-fries",
     name: "Loaded Fries",
-    price: "$11.99",
     description: "Signature Fries with melted cheese, corn, black beans, cheddar cheese, tomatoes, scallions and sour cream.",
     image: "/assets/images/loaded-fries.jpg",
     alt: "Loaded fries from Ms. Spudz",
@@ -153,7 +136,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "loaded-nachos",
     name: "Loaded Nachos",
-    price: "$11.99",
     description: "Homemade chips with melted cheese topped with corn, black beans, cheddar cheese, tomatoes, scallions and sour cream~",
     image: "/assets/images/loaded-nachos.jpg",
     alt: "Loaded nachos from Ms. Spudz",
@@ -161,7 +143,6 @@ export const foodItems: FoodItem[] = [
   {
     id: "raspberry-love-iced-tea",
     name: "Ms. Spudz Raspberry Love Iced Tea",
-    price: "$4.99",
     description: "Homemade raspberry flavored iced tea.",
     image: "/assets/images/raspberry-love-iced-tea.jpg",
     alt: "Ms. Spudz Raspberry Love Iced Tea",
@@ -172,7 +153,7 @@ export const menuSections = [
   {
     id: "signature",
     title: "Signature Items",
-    intro: "The four specialties, shown with their product-page descriptions and current menu pricing.",
+    intro: "The four specialties, shown with their product-page descriptions.",
     itemIds: ["signature-fries", "loaded-mash", "fish-tacos", "fish-sliders"],
     useFullDescription: true,
   },
@@ -256,18 +237,15 @@ export const founders = {
   image: "/assets/images/owner.jpg",
   imageAlt: "Tinnette and Chel’Si at a Ms. Spudz event",
   visibleStory:
-    "We're the mother-daughter duo and hearts behind Ms. Spudz - Everything Potato \"No\" Gravy. Based in Brooklyn, our story started in 2012 at ENY Farms and neighborhood festivals with just a table, a tent, a fryer, and a big dream.",
+    "Welcome to Ms. Spudz - Everything Potato \"No\" Gray - where flavor, family, and Brooklyn hearts come together in every bite.",
   aboutStory: [
-    "We are the mother daughter duo and hearts behind Ms. Spudz – Everything Potato: “No” Gravy. Based in planet Brooklyn, our story started back in 2012 at a local farmers market (ENY Farms) and neighborhood festivals — just a table, tent and fryer - and a big dream.",
-    "I used to imagine myself with a French fry cart, similar to a hot dog vendor, serving up something simple but full of soul. For a long time, I talked myself out of what I would eventually convince myself was inevitable. I kept thinking, “No one would buy just fries?” But deep down, I knew I had something special — something worth sharing. So, I stepped out on faith and followed the vision that would eventually bring me here with you today.",
-    "Ms. Spudz is an all-potato-based food outlet with flavor at its core. We specialize in fresh-cut fries, chips, seafood, tacos, nachos, and more — all served with our signature gourmet dipping sauces, ranging from mild, to sweet, to spicy with delicious and bold flavors.",
-    "But the heart of our menu? Grandma’s Original dipping Sauce.",
-    "This is the recipe that started it all. Introduced to me as a little girl by my grandmother when we cooked meals to serve the community, this sauce carries her spirit and approval. It’s more than just a best-seller — it’s a reminder of who I am, where I come from, and why I serve. She always told me, “Presentation is everything.” And we bring that into every plate we prepare knowing customers eat with their eyes first.",
-    "Our fries are cut fresh from whole potatoes, soaked in a cold-water bath to reduce the starch, then double fried for that perfect crisp, with the fluffiest interior. They’re so rich and satisfying, you really don’t need much more — just a little dip of flavor, a little bit of soul.",
-    "Ms. Spudz is a seasonal business and a love letter to comfort food, typically running from May through November — the time when the city’s alive and cravings hit the hardest.",
-    "We proudly serve a diverse and hungry crowd: from families to college students, late-night foodies to hardworking professionals. But above all, we serve people who love flavor, culture, and food that feels like home.",
-    "From our Brooklyn roots to our five-borough vision, Ms. Spudz is building something bold — a brand that celebrates tradition, reinvents street food, and brings people together, one potato at a time.",
-    "Thanks for being part of this journey. I can’t wait to serve you soon.",
+    "Welcome to Ms. Spudz - Everything Potato \"No\" Gray - where flavor, family, and Brooklyn hearts come together in every bite.",
+    "We’re a mother/daughter duo who started this journey back in 2012 with nothing more than a fryer, a Big Idea - to start a French fry company! Fresh-cut potatoes paired with our signature dipping sauces - quickly grew into something bigger than we ever imagined. The boroughs showed us love, and we poured that love right back into the food.",
+    "Over the years, we’ve expanded our menu to include some of the best seafood, tacos, sliders, and comfort-food favorites you’ll find anywhere in New York. But no matter how much we’ve grown, our foundation stays the same: fresh ingredients, bold flavors, and food made with intention.",
+    "Our customers often tell us they can taste the love in every dish - and they’re right. We cook the way we live: with joy, with purpose, and with a deep commitment to feeding our community. Ms. Spudz isn’t just a business. It’s our story, our legacy, and our way of bringing people together one plate at a time. We love when you stick around and look forward to creating the space for you to do so.",
+    "Thank you for being part of this journey. Whether you’ve been rocking with us since the farmers market days or you’re discovering us for the first time, we’re grateful. We love what we do, and we love feeding you.",
+    "With flavor and gratitude,",
+    "The Ms. Spudz Family",
   ],
   timeline: [
     { year: "2012", text: "Story started at a local farmers market, ENY Farms." },

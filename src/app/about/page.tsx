@@ -6,19 +6,19 @@ import { founders, site } from "@/lib/data"
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet Tinnette (Pippi) and Chel’Si, the mother daughter duo and hearts behind Brooklyn-based Ms. Spudz.",
+    "Meet the mother/daughter duo behind Ms. Spudz and their Brooklyn food story.",
   openGraph: {
     title: "About | Ms. Spudz",
     description:
-      "Ms. Spudz started in 2012 at ENY Farms and neighborhood festivals with a table, tent, fryer, and a big dream.",
+      "Ms. Spudz started in 2012 with fresh-cut potatoes, signature dipping sauces, and a big idea.",
     images: [{ url: "/assets/images/owner.jpg", width: 3200, height: 4082, alt: founders.imageAlt }],
   },
 }
 
 const originMarkers = [
-  { value: "2012", label: "ENY Farms beginning" },
-  { value: "May-Nov", label: "Seasonal Brooklyn run" },
-  { value: "5 boroughs", label: "Rooted vision" },
+  { value: "2012", label: "Started the journey" },
+  { value: "Brooklyn", label: "Family roots" },
+  { value: "Fresh-cut", label: "Potato foundation" },
 ]
 
 const identityDetails = [
@@ -31,9 +31,9 @@ const identityDetails = [
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-white px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20">
+      <section className="bg-spudz-truck px-4 pb-16 pt-28 sm:px-6 lg:px-8 lg:pb-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.98fr_0.82fr] lg:items-end">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl bg-white p-8 shadow-[12px_12px_0_rgba(22,36,17,0.2)]">
             <p className="mb-4 text-sm font-black uppercase tracking-[0.22em] text-spudz-gold">Founder's Message</p>
             <h1 className="font-display text-5xl font-black uppercase leading-[0.9] tracking-normal text-spudz-black sm:text-7xl lg:text-8xl">
               <span className="block">The Hearts</span>
@@ -67,7 +67,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-spudz-cream px-4 py-20 text-spudz-black sm:px-6 lg:px-8">
+      <section className="bg-white px-4 py-20 text-spudz-black sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.34fr_1fr]">
           <aside data-scroll-reveal className="lg:sticky lg:top-28 lg:self-start">
             <p className="mb-4 text-xs font-black uppercase tracking-[0.24em] text-spudz-red">Our Story</p>
@@ -75,8 +75,7 @@ export default function AboutPage() {
               A Love Letter To Flavor
             </h2>
             <p className="mt-5 text-lg font-bold leading-8 text-spudz-ink/80">
-              From a cart-sized vision to a Brooklyn street food brand, this is the story behind the sauce, the fries,
-              and the family roots.
+              From fresh-cut potatoes and signature dipping sauces to a Brooklyn comfort-food brand, this is the story behind the flavor.
             </p>
           </aside>
 
@@ -87,7 +86,7 @@ export default function AboutPage() {
                   key={paragraph}
                   data-scroll-reveal
                   className={
-                    index === 3
+                    index === founders.aboutStory.length - 1
                       ? "my-4 border-l-4 border-spudz-red bg-spudz-gold px-5 py-5 text-2xl font-black uppercase leading-tight text-spudz-black shadow-[8px_8px_0_rgba(22,36,17,0.18)]"
                       : "py-6 text-xl font-semibold leading-9 text-spudz-ink"
                   }
@@ -108,8 +107,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-spudz-charcoal px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-spudz-truck px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl bg-white p-8 shadow-[12px_12px_0_rgba(22,36,17,0.2)]">
           <SectionHeading
             kicker="Identity"
             title="Brooklyn-Based. Community-Focused."

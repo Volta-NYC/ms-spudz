@@ -19,8 +19,8 @@ export default function HomePage() {
           alt="Ms. Spudz hero food spread"
           className="motion-hero-image absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.82)_0%,rgba(245,255,239,0.58)_42%,rgba(167,218,121,0.14)_100%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white to-transparent" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.82)_0%,rgba(245,255,239,0.58)_42%,rgba(71,112,76,0.3)_100%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-spudz-truck to-transparent" />
 
         <div className="relative mx-auto grid w-full max-w-7xl gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
           <div className="max-w-4xl">
@@ -61,8 +61,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-spudz-truck px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl bg-white p-8 shadow-[12px_12px_0_rgba(22,36,17,0.2)]">
           <SectionHeading
             kicker="About"
             title="Built From A Table, Tent And Fryer"
@@ -71,15 +71,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-spudz-charcoal px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-spudz-truck px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
-            <SectionHeading
-              kicker="Specialties"
-              title="The Core Four"
-              copy="The signature items from the ordering side of the original site, shown with current menu pricing."
-            />
-            <Link href="/menu" className="text-sm font-black uppercase tracking-[0.16em] text-spudz-gold hover:text-spudz-black">
+            <div className="bg-white p-8 shadow-[12px_12px_0_rgba(22,36,17,0.2)]">
+              <SectionHeading
+                kicker="Specialties"
+                title="The Core Four"
+                copy="A closer look at the signature items Ms. Spudz is known for."
+              />
+            </div>
+            <Link href="/menu" className="text-sm font-black uppercase tracking-[0.16em] text-white hover:text-spudz-gold">
               See Full Menu
             </Link>
           </div>
@@ -100,8 +102,10 @@ export default function HomePage() {
       <section className="border-y border-spudz-gold/25 bg-spudz-gold px-4 py-8 text-spudz-black sm:px-6 lg:px-8">
         <div data-scroll-reveal className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="text-2xl font-black uppercase tracking-normal">Find Us</h2>
-            <p className="mt-1 text-sm font-bold">{site.address}</p>
+            <h2 className="text-2xl font-black uppercase tracking-normal">Contact Us</h2>
+            <p className="mt-1 text-sm font-bold">
+              <a href={`tel:${site.phone.replace(/\D/g, "")}`} className="hover:underline">{site.phone}</a>
+            </p>
           </div>
           <div className="flex flex-col gap-2 text-sm font-black sm:flex-row sm:items-center sm:gap-6">
             <a href={`mailto:${site.email}`} className="hover:text-spudz-black">{site.email}</a>

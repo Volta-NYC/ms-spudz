@@ -36,7 +36,7 @@ export default function MenuPage() {
               Everything Potato.
             </h1>
             <p className="motion-fade-up motion-fade-up-late mt-7 max-w-2xl text-xl leading-8 text-spudz-muted">
-              Menu page prices are treated as canonical. Signature Fries list Small, Medium, and Large pricing from the scraped menu and product detail text.
+              Explore the dishes, sauces, and comfort-food favorites Ms. Spudz is known for.
             </p>
           </div>
           <div className="motion-fade-up motion-fade-up-late mt-10 flex flex-wrap gap-3">
@@ -117,7 +117,7 @@ export default function MenuPage() {
             <SectionHeading
               kicker="Sauce Menu"
               title="Dipping Sauces"
-              copy="No sauce prices were listed in the scrape, so these are displayed as a sauce menu with descriptions only."
+              copy="Signature dipping sauces with bold flavor, from sweet and tangy to creamy and spicy."
             />
             <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {sauces.map((sauce, index) => (
