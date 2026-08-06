@@ -15,12 +15,12 @@ export default function Footer() {
           <p className="mt-2 text-sm text-spudz-muted">
             Made by{" "}
             <a
-              href="https://voltanyc.org"
+              href="https://www.novusnyc.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold text-spudz-volta hover:underline"
+              className="text-[#F6B78D] hover:text-[#F6B78D]"
             >
-              Volta
+              Novus
             </a>
           </p>
         </div>
